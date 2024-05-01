@@ -29,7 +29,7 @@ export async function getBitcoinData(address) {
       url: 'https://graphql.bitquery.io',
       headers: {
         'Content-Type': 'application/json',
-        'X-API-KEY': process.env.BLOCKCHAIN_API,
+        'X-API-KEY': 'BQYqrxjiMiX3jUKI3EkudXKfkBXj9jR9',
         'Authorization': 'Bearer ory_at_gwT81eBtc2e9t-NH_D1qDpopojF44lwb3pmZtZVDiX4.ZjQhu4Kc2i0RP-3ICMsesNYQwkPnuDTvZ_FcsOmVWwc'
       },
       data: data
