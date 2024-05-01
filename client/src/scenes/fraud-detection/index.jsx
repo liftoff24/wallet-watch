@@ -53,7 +53,7 @@ const FraudDetection = () => {
 
   const makePrediction = async (predictionData) => {
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/predict`, {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}predict`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
