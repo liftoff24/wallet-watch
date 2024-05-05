@@ -43,6 +43,10 @@ app.post('/predict', (req, res) => {
         result += data.toString();
     });
 
+    pythonProcess.stderr.on('data', (data) => {
+        console.error(`stderr: ${data.toString()}`);
+    });    
+
     pythonProcess.on('close', (code) => {
         if (code === 0) {
             try {
