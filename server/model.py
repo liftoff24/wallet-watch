@@ -1,17 +1,9 @@
 import joblib
 import json
 import sys
-import os
-
-
-base_dir = os.path.dirname(os.path.abspath(__file__))
-
-# Path to the joblib file
-model_path = os.path.join(base_dir, 'models', 'random_forest_classifier_binary.joblib')
-
 
 # Load joblib
-rf_classifier = joblib.load(model_path)
+rf_classifier = joblib.load('models/random_forest_classifier_binary.joblib')
 
 # predictions
 def predict(input_data):
