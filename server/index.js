@@ -34,12 +34,12 @@ const PORT = process.env.PORT || 9000;
 app.post('/predict', (req, res) => {
     const inputData = req.body;
 
-    const pythonExecutable = '/opt/render/.local/bin/python'; // Adjust the path as necessary
-    const pythonProcess = spawn(pythonExecutable, ['model.py', JSON.stringify(inputData)]);
+    // const pythonExecutable = '/opt/render/.local/bin/python'; // Adjust the path as necessary
+    // const pythonProcess = spawn(pythonExecutable, ['model.py', JSON.stringify(inputData)]);
 
 
     const pythonScriptPath = path.join(__dirname, 'model.py');
-    // const pythonProcess = spawn('python', ['model.py', JSON.stringify(inputData)]);
+    const pythonProcess = spawn('python', ['model.py', JSON.stringify(inputData)]);
 
     let result = '';
 
