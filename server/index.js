@@ -35,7 +35,7 @@ app.post('/predict', (req, res) => {
     const inputData = req.body;
 
     const pythonScriptPath = path.join(__dirname, 'model.py');
-    const pythonProcess = spawn('python', [pythonScriptPath, JSON.stringify(inputData)]);
+    const pythonProcess = spawn('python', ['model.py', JSON.stringify(inputData)]);
 
     let result = '';
 
