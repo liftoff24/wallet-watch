@@ -3,6 +3,9 @@
 ## Description
 Wallet Watch is a web-platform built on the MERN Stack designed to classify Bitcoin (BTC) addresses as fraudulent or non-fraudulent using Machine Learning. This tool is essential for users who wish to verify the integrity of BTC addresses before proceeding with transactions, providing a safeguard against fraudulent activities.
 
+The platform can be used at https://wallet-watch-frontend.onrender.com/fraud-detection
+**However, the main functionality (the model) does not work on this link currently due to hosting server limitations**
+
 ## Key Features
 - **BTC Address Classifier**: Enter a BTC address to receive a fraud score indicating the likelihood of the address being fraudulent.
 - **Global Cryptocurrency Dashboard/Overview**: Stay updated with the latest trends and data in the cryptocurrency market.
